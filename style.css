@@ -37,17 +37,22 @@ body {
   display: none;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .menu ul {
   display: flex;
   margin-right: 10px;
+  margin-left: 30px;
+  gap: 40px;
 }
 
 .menu li {
   display: flex;
   text-decoration: none;
-  margin-left: 40px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 20px auto;
   font-weight: 700;
   color: #492118;
 }
@@ -132,6 +137,13 @@ body {
   h1 {
     font-size: 30px;
   }
+  .burger-menu {
+    display: none;
+  }
+
+  .close-icon {
+    display: none;
+  }
 }
 
 @media (min-width: 1048px) {
@@ -149,7 +161,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 910px) {
   .logo {
     width: 15px;
   }
@@ -180,7 +192,7 @@ body {
     background-color: rgba(255, 255, 255, 0.871);
     display: none;
     position: absolute;
-    height: 30%;
+    height: 250px;
     border-radius: 10px;
     z-index: 1;
     border: 1px solid black;
@@ -195,7 +207,7 @@ body {
   }
 
   .close-icon img {
-    height: 2dvh;
+    height: 20px;
     width: 20px;
   }
 

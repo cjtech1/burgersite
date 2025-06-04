@@ -23,7 +23,7 @@ closeIcon.addEventListener("click", () => {
 
 // Function to check window width and set appropriate menu state
 function checkScreenSize() {
-  const isMobile = window.innerWidth <= 768; // Adjust this breakpoint to match your CSS media query
+  const isMobile = window.innerWidth <= 910; // Adjust this breakpoint to match your CSS media query
 
   // Show/hide burger menu icon based on screen size
   if (isMobile) {
@@ -34,7 +34,6 @@ function checkScreenSize() {
 
   // On desktop, ensure hamburger menu is visible and close icon is hidden
   if (!isMobile) {
-    console.log(isMobile);
     menu.style.display = "block";
     closeIcon.style.display = "none";
     hamburger.style.display = "none"; // Remove any active class if you're using one
